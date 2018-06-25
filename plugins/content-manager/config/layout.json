@@ -1,0 +1,21 @@
+{
+  "products": {
+    "attributes": {
+      "name": {
+        "appearance": ""
+      },
+      "price": {
+        "appearance": ""
+      },
+      "originPrice": {
+        "appearance": ""
+      },
+      "link": {
+        "appearance": ""
+      },
+      "category": {
+        "appearance": ""
+      }
+    }
+  }
+}

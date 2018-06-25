@@ -1,0 +1,60 @@
+{
+  "connection": "default",
+  "collectionName": "products",
+  "info": {
+    "name": "products",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "name": {
+      "maxLength": 128,
+      "minLength": 2,
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "default": "etc",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "accessory",
+        "electronic",
+        "car",
+        "homeware",
+        "kids",
+        "men",
+        "outdoor",
+        "pet",
+        "sports",
+        "stationery",
+        "toy",
+        "women",
+        "etc"
+      ]
+    },
+    "originPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "discountPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
